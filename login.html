@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="head.css">
+  <link rel="stylesheet" media="screen" href="loginform.css">
+
+  <link rel="icon" href="image/clglogo.png">
+  <style>
+    .loginform {
+      padding: 30px;
+      background-color: #89959d;
+      border-radius: 8px;
+      margin: 30px;
+      text-align: center;
+    }
+
+    .si {
+      color: aliceblue;
+    }
+
+    .divform {
+      margin-bottom: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="clgimg">
+      <img src="image/VCET.png" class="logo">
+    </div>
+
+    <hr>
+    <!-- navigation bar -->
+    <header>
+      <!-- login and signup -->
+      <div id="first" class="navbar justify-content-end ">
+        <ul class="nav justify-content-end ">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-info" href="signup.html">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-info" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">+91-9994994991, 7898745834</a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <!-- navigation bar -->
+      <ul class="nav1">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item nav-pills nav-fill">
+                  <a class="nav-link  active btn btn-outline-info" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-info" href="admission.html">ADMISSION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-info" href="about.html">ABOUT US</a>
+                </li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    MORE
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="event.html">Events</a></li>
+                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </ul>
+      <hr>
+    </header>
+    <form class="loginform" name="myForm">
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label"><b>Username</b></label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3" name="username" placeholder="username" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Password</b></label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" name="password" placeholder="password"
+            required>
+        </div>
+      </div>
+      <p class="btn btn-primary" onclick="return Form()"><a href="dashboard.html" style="color: #ffffff;">
+          <bold>Sign in</bold>
+        </a></p>
+    </form>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    function Form() {
+      var username = document.forms["myForm"]["username"].value;
+      var password = document.forms["myForm"]["password"].value;
+      if (username == "") {
+        alert("Please enter your name.");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("password should be atleast 10 characters long");
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+footer {
+    display: flex;
+    background: rgb(38, 49, 61);
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.footerimg h2,
+.container-fluid text-light h2 {
+    color: goldenrod;
+    padding: 10px;
+
+}
+
+.footerimg {
+    float: left;
+    width: 30%;
+}
+
+.footerimg img {
+    width: 100px;
+    height: 100px;
+}
+
+.flink {
+    text-decoration: none;
+    float: right;
+    width: 100px;
+}
+
+.container-fluid text-light {
+    float: right;
+    width: 70%;
+    font-size: 1em;
+}
+
+.container-fluid text-light p {
+    padding: 10px;
+    text-align: justify;
+    line-height: 20px;
+    color: whitesmoke;
+}
+
+
+
+@media(max-width:600px) {
+    .footerimg img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .container-fluid text-light {
+        font-size: 3px;
+    }
+
+    .parallax-img-1 {
+        background: url(image/parallax1.jpg);
+        height: 175px;
+        display: inline-block;
+        width: 50%;
+        /* margin-left:3em ; */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .parallax-img-2 {
+        background: url(image/brown-book-page.jpg);
+        height: 175px;
+        display: inline-block;
+        width: 50%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .parallax-content {
+        width: 50%;
+        padding: 10px;
+        margin: 5px;
+        font-size: x-small;
+        display: inline;
+        position: relative;
+        text-align: inherit;
+        top: 0px;
+        color: black;
+    }
+}
+
+
+
+@media(min-width:600px) {
+    .footerimg img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .parallax-content {
+        width: 20%;
+        padding: 5px;
+        margin: 5px;
+        display: inline;
+        position: relative;
+        text-align: inherit;
+        top: 0px;
+        color: black;
+    }
+
+    .parallax-img-1 {
+        background: url(image/parallax1.jpg);
+        height: 275px;
+        display: inline-block;
+        width: 50%;
+        /* margin-left:3em ; */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .parallax-img-2 {
+        background: url(image/brown-book-page.jpg);
+        height: 275px;
+        display: inline-block;
+        width: 50%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .container-fluid text-light {
+        font-size: 20px;
+
+    }
+}
