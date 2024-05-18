@@ -1,2 +1,2 @@
-# ExamResultsAnalyzementSystem
-This personal project showcases a website inspired by my college website. It offers college details and student details and students can also know their exam results in this website through the technology like HTML,CSS,JS,PHP.
+# EduTrack
+EduTrack is a user-friendly web platform that simplifies college management by integrating college details and student marks in one centralized system. Admins can easily enter and update student marks, while students can conveniently access their academic data. With its straightforward interface and secure authentication, EduTrack ensures efficient management of college operations and provides students with valuable insights into their academic progress.
